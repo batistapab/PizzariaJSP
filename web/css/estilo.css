@@ -1,0 +1,729 @@
+*{margin: 0;padding: 0} /*Aqui zeramos a margin e o padding de todos os elementos */
+body{
+    background:  #333 url('../img/bg-main.jpg') repeat;height: 100%;
+    min-width: 1054px;
+}
+/* Opera Fix - http://www.cssstickyfooter.com/br/using-sticky-footer-code.html */
+
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+html, body, #main{
+    height:100%;
+}
+input[type="email"],input[type="text"],input[type="date"],input[type="number"],button,input[type="password"],input[type="reset"],input[type="submit"],select,input[type="tel"] {
+    padding:5px 10px 5px 10px;
+}
+#emailnewsletter {
+    width:174px;
+    margin:10px 0 10px 5px;
+}
+#cadNewsletter {
+    margin-left:5px;
+}
+@font-face{
+    font-family: 'averia_sans_libreregular';
+    src: url('../fonts/averiasanslibre-regular-webfont.eot');
+    src: url('../fonts/averiasanslibre-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/averiasanslibre-regular-webfont.woff') format('woff'),
+        url('../fonts/averiasanslibre-regular-webfont.ttf') format('truetype'),
+        url('../fonts/averiasanslibre-regular-webfont.svg#averia_sans_libreregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body>#main{
+    left: 0;
+    width:100%;
+    height: auto;
+    position: relative; 
+    margin:0px auto 0px;
+}
+body>#main>#conteudo{
+    top: 0px;   
+    width: 80%;
+    width: -webkit-calc(100%-220px);  /* para Chrome */
+    width: -moz-calc(100%-220px);     /* para Firefox */
+    width: calc(100%-220px);          /* para suporte nativo */
+    /* position: relative; */
+    height: auto;
+}
+body>#main>#apoio{   
+    width:210px;
+    height: 560px;
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    bottom:10px;
+} 
+#topo{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 130px;
+    background:url('../img/bg-h1.jpg') repeat;
+}
+#topo>#logo>h1,#topo>#logo>h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: #FFEC5C;
+
+}
+body #topo>#logo>p{
+    font-family: Arial;
+    color: #000;
+    text-shadow:none;
+    text-align:left;
+    text-indent:40px;
+    font-size:12px;
+    margin-top:5px;
+    font-weight:bold;
+}
+#topo>#logo>h1{
+    font-size: 3em;   
+    text-indent: 30px;
+    height: 100%;
+}
+#topo>#logo>h2{
+
+    font-size: 2.5em;
+}
+#topo>#logo>h3{
+    font-size: 1.8em;
+    color: #fff;
+    text-indent: 30px;
+}
+#logo{
+    margin-left:20px;
+    height: 130px;
+    width: 550px;
+    text-align: left; 
+    font-family: 'Averia Sans Libre', cursive;    
+    text-shadow: #444 1px 1px; 
+}
+#topo img{
+    width:  90px;
+    height: 120px;
+    float: left;
+    -ms-animation: logo 5s ease 1s infinite alternate; /* IE 9 */
+    -webkit-animation: logo 5s ease 1s infinite alternate; /* Chrome, Safari, Opera */
+    animation: logo 5s ease 1s infinite alternate; /* Standard syntax */
+}
+
+@keyframes logo{
+    0%   { 
+        -ms-transform:rotate(0deg); /* IE 9 */  
+        -webkit-transform:rotate(0deg); /* Chrome, Safari, Opera */
+        transform:rotate(0deg); /* Standard syntax */
+    }
+    25%  { 
+        -ms-transform:rotate(25deg); /* IE 9 */  
+        -webkit-transform:rotate(25deg); /* Chrome, Safari, Opera */
+        transform:rotate(25deg); /* Standard syntax */
+    }
+    50%  { 
+        -ms-transform:rotate(50deg); /* IE 9 */  
+        -webkit-transform:rotate(50deg); /* Chrome, Safari, Opera */
+        transform:rotate(50deg); /* Standard syntax */
+    }
+    75%  { 
+        -ms-transform:rotate(75deg); /* IE 9 */  
+        -webkit-transform:rotate(75deg); /* Chrome, Safari, Opera */
+        transform:rotate(75deg); /* Standard syntax */
+    }
+    100% { 
+        -ms-transform:rotate(100deg); /* IE 9 */  
+        -webkit-transform:rotate(100deg); /* Chrome, Safari, Opera */
+        transform:rotate(100deg); /* Standard syntax */
+    }
+}
+
+#slider {
+    width:100%;
+    height:300px;
+    margin:10px 0 10px 0;
+    background-color:#fff;
+}
+.box-conteudo{
+    width: 32%;
+    height:250px;
+    border-radius:5px;
+    display: inline-block;
+    margin-right: 1%;
+    float: left;
+}
+.box-conteudo:last-child{
+    width: 32%;
+    height:250px;
+    border-radius:5px;
+    margin-left: 1%;
+    margin-right: 0;
+}
+.box-conteudo p{
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+    margin:10px 0 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+.box-conteudo img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-left:80px;
+}
+
+#footer{
+    width:100%;
+    height: 80px;
+    padding: 10px 0 10px 0;
+    position: relative;
+    background-color:rgba(100,93,93,0.6);
+    clear:both;
+}
+
+#redessociais {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+#redessociais img {
+    background-color:#fff;
+}
+#direitosautorais {
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+    color:#000;
+}
+body>#main>#conteudo>#content>h2{
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+/* Menu */
+
+#topo>nav.menu{
+    top: 98px;
+    right: 20px;
+    text-align: right;
+    position: absolute; 
+
+}
+nav.menu{
+    width: -webkit-calc(100%-250px);  /* para Chrome */
+    width: -moz-calc(100%-250px);     /* para Firefox */
+    width: calc(100%-250px);          /* para suporte nativo */
+    display: block;
+    top: 98px;
+    right: 20px;
+    text-align: center;
+}
+nav.menu ul{font-size: 0;list-style-type: none;}
+nav.menu ul li{display: inline-block; border-right: 1px solid #ccc;border-left: 1px solid #555;padding: 0 10px 0 10px;font-size: 14px;}
+nav.menu ul li a:link,nav.menu ul li a:visited{text-decoration: none;color: #fff;font-size: 1.2em;
+                                               text-shadow: #555 1px 2px 1px;
+}
+nav.menu ul li a:hover{text-decoration: underline;}
+nav.menu ul li:first-child{border-left: none;}
+nav.menu ul li:last-child{border-right: none;}
+
+/* Fim do menu*/  
+
+/*Telefones*/
+#topo>#telefones{
+    font-family: 'Averia Sans Libre', cursive;
+    color:#F8FF2E;
+    font-size: 1.3em;
+    position: absolute;
+    top:5px;
+    right: 20px;
+    text-align: center;
+    text-shadow: #444 1px 1px;
+}
+#topo>#telefones>span{
+    font-size: 2.3em;
+}
+
+#atendimento,#formasDePagamento,#newsletter {   
+    float:left;
+    width:100%;
+    border-radius:5px;
+}
+#atendimento>h2,#formasDePagamento>h2,#newsletter>h2,.box-conteudo h2,#opedido h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgb(255,255,255);
+    text-shadow:1px 1px #808080;
+    font-size:1.2em;
+    text-align:center;
+    background-color:rgba(000,000,000,0.6);
+    padding:5px 0 5px 0;
+}
+#atendimento {
+    height:150px;
+}
+#atendimento p {
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    line-height: 22px;
+}
+#formasDePagamento {    
+    height:399px;
+    margin:10px 0 10px 0;
+}
+#formasDePagamento p {
+    font-size:15px; 
+    padding:0 5px 0 5px;
+    margin:5px 0 8px;
+    text-align:justify;
+    line-height:22px;
+}
+#newsletter {
+    width:100%;
+    height:140px;
+}
+#formasDePagamento img {
+    margin:10px 0 10px 3.5px;
+    line-height:50px;
+}
+#privacidade{
+    margin: 0px;
+}
+
+#privacidade div{
+    background-color:rgba(255,255,255,0.9);
+    width:700px;
+    margin: 0px auto;
+    height:600px;
+}
+.cardapio{
+    width:245px;
+    background-color:rgba(252, 239, 136,0.6);
+    min-height: 590px;
+    margin:10px 0 10px 5px;
+    border-radius:5px;
+    display:inline-block;
+}
+.cardapio img{
+    width: 190px;
+    margin:15px 0px 0 22px;
+}
+.cardapio h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px #808080;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(230,158,18,0.6);
+    padding: 5px 0 5px 0;
+}
+#menuServicos{
+    width:210px;
+    min-height:580px;
+    background-color:rgba(252, 239, 136,0.6);
+    margin:10px 0 10px;
+    border-radius:5px;
+    float:left;
+}
+#menuServicos h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px #808080;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(230,158,18,0.6);
+    padding: 5px 0 5px 0;
+}
+
+#menuServicos ul{
+    list-style-image:url('../img/bullet.gif');
+    list-style-position: outside;
+    margin:5px 0 5px 25px;
+    width:180px;
+}
+
+#menuServicos ul li a:link,#menuServicos ul li a:visited {
+    text-decoration:none;
+    color:#fff;
+    line-height:30px;
+}
+#menuServicos ul li a:hover,#menuServicos ul li a:active {
+    text-decoration:underline;
+    color:#eee;
+}
+
+#home #conteudo #content{
+    width: 800px;
+    min-height:580px;
+    background-color:rgba(252, 239, 136,0.6);
+    float:right;
+    margin:10px 0 0 0;
+}
+
+#home #conteudo #content h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px #808080;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(230,158,18,0.6);
+    padding: 5px 0 5px 0;
+}
+#home #conteudo #nome-usuario{
+    float:left;
+    width:100%;
+    padding:10px 0 10px;
+    text-indent:30px;
+    background-color:rgba(252, 239, 136,0.8);
+    margin-top:10px;
+
+}
+#tabelaPedidos{
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-top:10px;
+    line-height:25px;
+    text-align:center;
+}
+#tabelaPedidos th{
+    font-weight:normal;
+    background-color:rgba(230,158,18,0.5);
+    padding:10px 0 10px;
+}
+#tabelaPedidos tfoot {
+    background-color: rgba(230, 158, 18, 0.5);
+    font-weight: normal;
+    padding: 10px 0;
+}
+#tabelaPedidos th,#tabelaPedidos td{
+    border-right:solid 1px rgb(230,158,18)
+}
+#tabelaPedidos th:last-child, #tabelaPedidos td:last-child {
+    border-right:none;
+}
+#tabelaPedidos tbody tr:nth-child(odd){ background-color: rgba(255,255,255,0.8);}
+
+#listaPedido{
+    width: -webkit-calc(100%-250px);  /* para Chrome */
+    width: -moz-calc(100%-250px);     /* para Firefox */
+    width: calc(100%-250px);          /* para suporte nativo */
+    display: block;
+    top: 98px;
+    right: 20px;
+    text-align: center;    
+    background-color:rgba(255,255,255,0.9);
+    min-height:590px;
+    float:right;
+}
+
+.cadastro{
+    margin:0 5% 0;
+    /* width:90%;*/
+    line-height:30px;
+}
+.retornoDB{
+    padding:20px; background:#fff; margin-top:200px;
+}
+.listas{
+    width:100%; 
+    text-align:left;
+    border-spacing:0;
+    border-collapse:collapse;
+    text-indent:5px;
+}
+.listas tr th{padding:5px 0 5px;
+              background-color:rgb(146, 100, 4);
+              color:#fff;
+              text-transform:capitalize;
+}
+.listas tr td{
+    padding:5px 0 5px;
+}
+
+.listas tr td:first-child{text-align:center;text-indent:5px;}
+
+
+/**Formulários de edição **/
+form#editar-usuario input[type='submit'],form#editar-usuario input[type='reset']{margin-top:15px; }
+form#editar-usuario input,form#editar-usuario select,form#editar-usuario textarea{margin-left:15px;}
+body form#editar-usuario{color:#fff;background-color:rgba(252, 239, 136,0.4);padding:0;width:100%;margin-left:0;height:100%}
+form#editar-usuario h2{font-family: 'Averia Sans Libre', cursive;
+                       color: rgb(255,255,255);
+                       text-shadow: 1px 1px #808080;
+                       font-size: 1.2em;
+                       text-align: center;
+                       background-color: rgba(230,158,18,0.6);
+                       padding: 5px 0 5px 0;
+}
+form#editar-usuario div label{padding-left:15px;}
+
+
+
+form#editar-produto input[type='submit'],form#editar-produto input[type='reset']{margin-top:15px; }
+form#editar-produto #produto{padding-left:10px;padding-right:10px;width:500px}
+form#editar-produto input,form#editar-produto select,form#editar-produto textarea{margin-left:15px;}
+body form#editar-produto{color:#fff;background-color:rgba(252, 239, 136,0.4);padding:0;width:100%;margin-left:0;height:100%}
+form#editar-produto h2{font-family: 'Averia Sans Libre', cursive;
+                       color: rgb(255,255,255);
+                       text-shadow: 1px 1px #808080;
+                       font-size: 1.2em;
+                       text-align: center;
+                       background-color: rgba(230,158,18,0.6);
+                       padding: 5px 0 5px 0;
+}
+form#editar-produto div label{padding-left:15px;}
+
+
+/**Fim dos formulários de edição**/
+
+
+.alerta{position:absolute;right:200px;top:450px;color:rgb(146, 100, 4)}
+
+#retornolista h3{
+    text-align:center;
+    margin:50px auto;
+}
+
+.listas tbody tr:nth-child(odd){ background-color: rgba(255,255,255,0.8);}
+
+#retornolista .listas tbody tr td:first-child{text-transform:capitalize;}
+
+.imgProdutos{height:40px}
+
+/** cardápio*/
+#verificacep {
+    background-color: rgba(230, 158, 18, 0.6);
+    color: #b50b0b;
+    font-family: 'Averia Sans Libre',cursive;
+    font-size: 14px;
+    padding: 2px 0;
+    text-shadow: 1px 1px rgba(252, 239, 136,0.7);
+    text-indent:20px;
+}
+
+#verificacep p>label{padding-left:20px;}
+.cep{
+    width: 90px;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+
+}
+.sucess{
+    background:url('../img/sucess.png') no-repeat left center;
+    padding: 5px 0px 5px 60px;
+    font-size: 15px;
+    color:#3a9805;
+}
+.fail{    
+    background:url('../img/fail.png') no-repeat left center;
+    padding: 40px 0px 40px 60px;
+    font-size: 15px;
+    color:#a32306;
+}
+#produtos-cardapio {
+    background-color: rgba(252, 239, 136,0.6);
+    min-height: 590px;
+    width: 54%;
+    position: absolute;
+    top: 10px;
+    margin-left: 255px;
+    border-radius:5px;
+}
+.ac-container>label{
+    background-color:#fff;
+    border:solid 1px rgb(230,158,18);
+    border-radius:5px; 
+    display:inline-block; 
+    width:100%;
+    padding:5px 0 5px;
+    text-align:center;
+    font-size:larger;
+    margin:5px 0 5px;
+    font-weight:bold;
+    color:rgb(230,158,18);
+    text-shadow:rgb(146, 100, 4) 1px 1px;
+}
+
+/* Formatando a lista de produtos no cardápio*/
+#pizzasTradicionais{
+    margin:0 10px 0;
+}
+.produtos-cardapio{
+    position:relative;
+    left:0;
+    right:0;
+    height:calc(100% - 140px);
+}
+.produtos-cardapio div{
+    width:100%;
+    min-height:101px;
+    float:left;
+}
+.produtos-cardapio div img{
+    float:left;
+    margin:5px 10px 5px 10px;
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    padding:2px;
+    background-color:#fff;
+    border:solid 1px #ddd;
+    box-shadow:1px 1px #444;
+}
+.produtos-cardapio div h3{width: calc(100% - 110px);}
+.produtos-cardapio div h3 label{float:right;margin:0 10px 0 10px}
+.produtos-cardapio div:nth-child(odd){ background-color: rgba(255,255,255,0.8);}
+.qtde{width:50px}
+.produtos-cardapio div hr{margin:10px 0 10px;}
+.produtos-cardapio div p:last-child{padding-bottom:10px;margin-left:20px}
+.produtos-cardapio div button{position:absolute;right:20px}
+
+body #produtos-cardapio #bebidas-cardapio img{
+    float:left;
+    margin:0 10px 0 10px;
+    height:40px;
+    width:26px;
+}
+body #produtos-cardapio #bebidas-cardapio table span{font-weight:bold;}
+body #produtos-cardapio #bebidas-cardapio table {width:100%}
+body #produtos-cardapio #bebidas-cardapio table tr td:nth-child(1),body #produtos-cardapio #bebidas-cardapio table tr td:nth-child(3){width:62px}
+body #produtos-cardapio #bebidas-cardapio table tr td:nth-child(4){width:120px;}
+body #produtos-cardapio #bebidas-cardapio table tr td:nth-child(5){width:100px;}
+body #produtos-cardapio #bebidas-cardapio table:nth-child(odd){ background-color: rgba(255,255,255,0.8);}
+
+/* o pedido  */
+body>#main>#conteudo>#opedido {
+    width: 210px;
+    min-height: 560px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    bottom: 10px;
+    background-color: rgba(252, 239, 136,0.6);
+}
+body>#main>#conteudo>#opedido p{margin:20px 0 20px 0;color:#000;}
+body>#main>#conteudo>#opedido p img{margin:0 15px 0 15px;vertical-align:middle}
+.imgCarrinho{width:40px;height:30px;vertical-align:text-bottom}
+#calculando{position:absolute;bottom:0px;width:100%;border-top: 2px solid rgba(230,158,18,0.6);background-color:rgba(255,255,255,0.6)}
+body>#main>#conteudo>#opedido #calculando p,body>#main>#conteudo>#opedido #itens-pedido p {
+    margin:3px 0 3px; text-indent:5px; font-size:12px;
+}
+#totalpedido{width:100%;background-color: rgba(230,158,18,0.6);padding:5px 0 5px 0}
+.button{background-color: rgb(230,158,18);border:none;color:#fff;box-shadow:2px 2px 2px #333;}
+.button:active,.button:hover{box-shadow:inset 0px 0px 2px 0px #333;text-shadow:1px 1px #777;cursor:pointer;}
+.button-red{background-color: rgb(230,158,18);border:none;color:#fff;box-shadow:2px 2px 2px #333;}
+.button-red:active,.button-red:hover{box-shadow:inset 0px 0px 2px 0px #333;text-shadow:1px 1px #777;cursor:pointer;}
+.imgOperacoes{width:20px;height:20px;float:right;border:none;}
+body>#main>#conteudo>#opedido #itens-pedido div p .imgOperacoes{margin: 0 5px 0 0;cursor:pointer}
+#itens-pedido div {
+    padding: 2px 0 2px;
+}
+#itens-pedido div p:first-child{
+    font-weight:bold;
+}
+#itens-pedido div:nth-child(odd){ background-color: rgba(255,255,255,0.8);}
+/*Manipulando o accordion*/
+
+#produtos-cardapio .ac-container{min-height:500px;height:100%}
+#produtos-cardapio .ui-accordion-header{font-size:15px;}
+#produtos-cardapio .ui-widget .ui-widget-content{background:transparent;font-weight:normal; font-family:sans-serif;font-size: 0.8em;}
+#produtos-cardapio .ui-accordion .ui-accordion-content {
+    padding:0px
+}
+#produtos-cardapio .ui-widget-content {
+    border:none
+}
+/**Manipulando tab no login*/
+.ui-widget-content{
+    margin-top:5px;
+    border-radius:5px;
+    background:rgba(252, 239, 136,0.6);    
+    padding: 0 1.4em 0 1.4em;
+}
+.ui-widget-content a{
+    text-decoration:none;
+}
+.ui-widget-content h2{
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px #808080;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(230,158,18,0.6);
+    padding: 5px 0 5px 0;
+}
+
+input[type='email'],#nome {
+    width:400px; 
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{
+    font-family: sans-serif; 
+    font-size: 0.8em; 
+}
+.ui-widget-content input{
+    display:block;
+    position:relative; 
+}
+.ui-widget-content button{
+    margin-top:20px;
+}
+.ui-widget-content label.error {
+    top: -20px;
+    width: auto;
+    color:#cc0000
+}
+
+.ui-tabs .ui-tabs-panel{
+    padding:0px;
+}
+.ui-tabs-panel div{
+    line-height:24px
+}
+.ui-widget {
+    font-family: sans-serif; 
+    font-size: 0.9em; 
+}
+#tabs{width:760px;
+      height:562px;}
+
+.ui-tabs table caption{text-align:left;font-weight:bold;font-size: 1.2em;margin-bottom:10px;}
+
+.ui-tabs table input[type='email'],.ui-tabs table #nome {
+    width:300px; 
+}
+.ui-tabs table tr th{font-weight:normal;text-align:left;}
+
+.ui-tabs table{background-color:rgba(255,255,255,0.6);width:100%;padding:10px;border-radius:5px;margin-bottom:20px;box-shadow:2px 2px #444}
+
+.ui-tabs table tr td #referencia{width:600px}
+
+
+#formDocumentos{
+    width:80%;
+    margin: 30px 0 0 10%;
+}
+
+#tabelaPedidos tr .btnExcluir{margin-right:15px;}
+#tabelaPedidos tr td:last-child{width:50px;}
+#dadostotal{padding:5px;background-color:rgba(255,255,255,0.6);text-indent:20px;}
+#pagamento{
+    padding-left:25px;
+}
+#btnParaConclusao button{float:right;margin-right:30px}
+
+.tablepedidos{
+    width:100%;
+    text-align:center;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tablepedidos tr td,.tablepedidos tr th{padding:5px 0 5px 0}
+.nivoSlider a.nivo-imageLink{
+    width:98%;
+}

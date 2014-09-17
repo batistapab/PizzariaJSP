@@ -1,0 +1,187 @@
+*,*:after,*:before {margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+body { font: Helvetica, sans-serif; color: #333333; background:  #333 url('../img/bg-main.jpg') repeat; }
+html, body, #geral {height: 100%;}
+ 
+body > #geral {height: auto; min-height: 100%;}
+#header{
+    background:url('../img/bg-h.jpg') repeat;
+    background-size: 100% 100%;
+    height: 126px;
+    width: 100%;
+}
+#header img{
+    margin: 0px 30px 0 20px;
+    display: inline-block;
+    width: 90px;
+    height: 120px;
+    float: left;
+}
+#header section{display: inline-block;margin-top: 20px;}
+#header section h1,#header section h2,#sidebar h2{ 
+    font-family: 'Averia Sans Libre', cursive;
+    text-shadow: 1px 1px #333;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+#header section h1{color: #ffec5c;}
+#header section h2{color: #fff;}
+/*Menu*/
+#verificacep p{
+background-color: rgba(144, 107, 19, 0.5);
+color: #fff;
+font-family: 'Averia Sans Libre',cursive;
+font-size: 14px;
+padding: 2px 0 2px 0;
+text-indent: 20px;
+}
+.imgCarrinho {
+width: 40px;
+height: 30px;
+vertical-align: text-bottom;
+}
+#verificacep p input{
+    color: #000;
+}
+#formContato{
+    padding: 10px;
+}
+#formContato fieldset legend,#formContato fieldset label{
+    font-family: 'Averia Sans Libre', cursive;
+}
+#calculando{padding: 5%;width: 90%;margin: 0 auto;}
+#calculando tr td{text-align: right;}
+nav.menu{
+    display: block;
+    text-align: right;
+    background-color: rgba(144, 107, 19, 0.5);
+    padding:5px 0 5px 0; 
+    height: 30px;
+    margin: 0px 0 5px 0;
+}
+nav.menu ul{font-size: 0;list-style-type: none;}
+nav.menu ul li{display: inline-block; border-right: 1px solid #ccc;border-left: 1px solid #555;padding: 0 10px 0 10px;font-size: 14px;}
+nav.menu ul li a:link,nav.menu ul li a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-shadow: #555 1px 2px 1px;
+}
+nav.menu ul li a:hover{text-decoration: underline;}
+nav.menu ul li:first-child{border-left: none;}
+nav.menu ul li:last-child{border-right: none;}
+
+#wrap {overflow:auto;padding-bottom: 150px;} 
+#footer {position: relative;margin-top: -150px;	height: 150px;clear:both;background-color:#ccc;	} 
+.sectiongroup{width: 100%;min-height: 320px;}
+.sectiongroup section{display: inline-block;width: 29%;float:left;margin:10px 2% 10px 2%}
+.sectiongroup section aside{height:110px}
+.sectiongroup section p{text-align: center}
+.sectiongroup section:last-child{margin-right: 0;}
+.sectiongroup section header{background-color: #906b13;padding: 5px; color: #ffec5c;font: 16px bold;
+                            font-family: 'Averia Sans Libre', cursive;margin-bottom: 15px}
+
+#sidebar h2{background-color: #906b13;padding: 5px; color: #ffec5c;font-size: 18px;
+margin-bottom: 15px;margin-top: 0;}
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 350px;
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 350px;
+}
+/* FIM CAROUSEL */
+/*Opera Fix*/
+body:before {content:"";height:100%;float:left;	width:0;margin-top:-32767px;}	
+#conteudo{width:78%;min-height:200px;margin-right:2%;float:left;margin-bottom:10px;
+ -moz-transition-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -webkit-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease; /* For Safari 3.1 to 6.0 */
+ -ms-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -o-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ transition: width 100ms ease, height 100ms ease, transform 100ms ease;
+ }
+#sidebar{
+  width:20%;
+  min-width:200px;
+  min-height:200px;
+  float:left;
+  margin-bottom:10px;
+  background-color: rgba(255,255,255,0.6);
+ -moz-transition-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -webkit-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease; /* For Safari 3.1 to 6.0 */
+ -ms-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -o-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ transition: width 100ms ease, height 100ms ease, transform 100ms ease;
+ padding-bottom: 20px;
+ }
+ #sidebar p{
+     padding: 0 10px 0 10px;
+ }
+ 
+ 
+@media all and (min-width: 880px) and (max-width: 1020px){	
+#sidebar{width:200px;min-height:200px;float:right;}	
+#conteudo{
+ width: -webkit-calc(100% - 220px);  /* para Chrome */
+ width: -moz-calc(100% - 220px);     /* para Firefox */
+ width: calc(100% - 220px);min-height:200px;
+ margin-right:2%;float:left;}
+.sectiongroup section{ width: 96%;}
+
+}
+@media all and (max-width: 880px){
+
+#header img {
+margin: 15px 30px 0 20px;
+display: inline-block;
+width: 50px;
+height: 70px;
+float: left;
+}
+#sidebar{width:100%;min-height:200px;}
+#conteudo{width: 100%;min-height:200px;}
+.sectiongroup section{ width: 96%;}
+.carousel {
+  height: 200px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 200px;
+}
+.carousel-inner > .item > img {
+  height: 200px;
+}
+
+}
+.btn-brown {
+color: #fff;
+background-color: #906b13;
+border-color: #aa801a;
+}
+.btn-brown:hover{
+color: #ffec5c;
+background-color: #aa801a;
+border-color:#906b13;
+}
