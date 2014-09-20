@@ -14,72 +14,75 @@
                <form id="cadastrado" method="post" class="tab-pane active" action="logar.asp"> 
                    <input type="hidden" name="op" value="1" />   
                    <br />
-                       <div>
+                       <div class="form-group">
                            <label for="email">E-mail:</label>
-                       </div>
-                       <div>
                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" />
                        </div>
-                       <div>
+                       <div class="form-group">
                            <label for="senha">Senha:</label>
-                       </div>
-                       <div>
                            <input type="password" name="senha" id="senha" />
                        </div>
-                       <div>
+                       <div class="form-group">
                            <button type="submit" class="btn btn-primary">Acessar</button>
                        </div>
                </form>
                <form id="cadastrar" method="post" class="tab-pane" action="logar.asp">                    
                    <input type="hidden" name="op" value="2" />     
-                   <br />
-                       <table>
-                           <caption>Dados pessoais</caption>
-                           <tr>
-                               <th>Telefone</th>
-                               <th colspan="2">Nome</th>
-                           </tr>
-                           <tr>
-                               <td><input type="tel" class="telefone" name="telefone" id="telefone" maxlength="16" required /> </td>
-                               <td colspan="2"><input type="text" name="nome" id="nome" maxlength="150" required /></td>
-                           </tr>
-                           <tr>
-                               <th>E-mail</th>
-                               <th>Senha</th>
-                               <th>Confirmação de senha</th>
-                           </tr>
-                           <tr>
-                               <td><input type="email" name="email" id="email2" placeholder="Digite seu e-mail" maxlength="80" required /></td>
-                               <td><input type="password" name="senha" id="senha2" maxlength="10" required /></td>
-                               <td><input type="password" name="confirmarsenha" id="confimarsenha" maxlength="10" required /></td>
-                           </tr>
-                       </table>
-                       <table>
-                           <caption>Dados para entrega</caption>
-                           <tr>
-                               <th>CEP: <input type="text" name="cep" id="cep" class="cep" maxlength="9" placeholder="12345-678" required /></th>
-                               <td colspan="2"></td>
-                           </tr>
-                           <tr>
-                               <td>Endereço</td>
-                               <td>Número</td>
-                               <td>Complemento</td>
-                           </tr>
-                           <tr>
-                               <th><input type="text" name="endereco" id="endereco" maxlength="255" required /></th>
-                               <th><input type="text" name="numero" id="numero" maxlength="10" required  /></th>
-                               <th><input type="text" name="complemento" id="complemento" maxlength="20" /></th>
-                           </tr>
-                           <tr>
-                               <td>Bairro</td>
-                               <td>Cidade</td>
-                               <td>Estado</td>
-                           </tr>
-                           <tr>
-                               <th><input type="text" name="bairro" id="bairro" maxlength="255" required /></th>
-                               <th><input type="text" name="cidade" id="cidade" maxlength="255" required  /></th>
-                               <th>
-                                   <select name="estado" id="estado" required>
+                   <fieldset>
+                       <legend>Dados pessoais</legend>
+                           
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                               <input type="tel" class="telefone" name="telefone" id="telefone" maxlength="16" required /> 
+                        </div>
+                       <div class="form-group">
+                           <label for="nome">Nome</label>
+                           <input type="text" name="nome" id="nome" maxlength="150" required />
+                       </div>
+                       
+                       <div class="form-group">
+                           <label for="email2">E-mail</label>
+                           <input type="email" name="email" id="email2" placeholder="Digite seu e-mail" maxlength="80" required />
+                       </div>   
+                       <div class="form-group">
+                           <label for="senha2">Senha</label>
+                           <input type="password" name="senha" id="senha2" maxlength="10" required />
+                       </div>   
+                           
+                       <div class="form-group">
+                           <label for="confirmarsenha">Confirmação de senha</label>
+                           <input type="password" name="confirmarsenha" id="confimarsenha" maxlength="10" required />
+                       </div>   
+                   </fieldset>
+                     <fieldset>
+                         <legend>Dados para entrega</legend>
+                         <div class="form-group">
+                             <label for="cep">CEP</label>
+                             <input type="text" name="cep" id="cep" class="cep" maxlength="9" placeholder="12345-678" required />
+                         </div>
+                         <div class="form-group">
+                             <label for="endereco">Endereço</label>
+                             <input type="text" name="endereco" id="endereco" maxlength="255" required />
+                         </div>
+                         <div class="form-group">
+                             <label for="numero">Numero</label>
+                             <input type="text" name="numero" id="numero" maxlength="10" required  />
+                         </div>
+                         <div class="form-group">
+                             <label for="complemento">Complemento</label>
+                             <input type="text" name="complemento" id="complemento" maxlength="20" />
+                         </div>
+                         <div class="form-group">
+                             <label for="bairro">Bairro</label>
+                             <input type="text" name="bairro" id="bairro" maxlength="255" required />
+                         </div>
+                         <div class="form-group">
+                             <label for="cidade">Cidade</label>
+                             <input type="text" name="cidade" id="cidade" maxlength="255" required  />
+                         </div>
+                         <div class="form-group">
+                             <label for="estado">EStado</label>
+                             <select name="estado" id="estado" required>
                                         <option value="SP">São Paulo</option>
                                        <!--> <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
@@ -107,23 +110,18 @@
                                         <option value="SC">Santa Catarina</option>
                                         <option value="SE">Sergipe</option>
                                         <option value="TO">Tocantins</option>
-
                                            -->
                                     </select>
-
-                               </th>
-                           </tr>
-                           <tr>
-                               <th colspan="3">Ponto de referência</th>
-                           </tr>
-                           <tr>
-                               <td colspan="3"><input type="text" name="referencia" id="referencia" maxlength="255" /></td>
-                           </tr>
-                           <tr>
-                               <td colspan="3"><button type="submit" class="btn btn-primary">Cadastrar usuário</button></td>
-                           </tr>
-                       </table>
-               </form>
+                         </div>
+                         <div class="form-group">
+                             <label for="referencia">Ponto de referência</label>
+                             <input type="text" name="referencia" id="referencia" maxlength="255" />
+                         </div>
+                         <div class="form-group">
+                             <label for=""><button type="submit" class="btn btn-primary">Cadastrar usuário</button></label>
+                         </div>
+                     </fieldset>
+                 </form>
               </div>
 <jsp:include page="/includes/sidebar.jsp" />
 <jsp:include page="/includes/javascripts.jsp" />

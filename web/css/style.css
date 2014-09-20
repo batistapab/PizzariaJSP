@@ -70,7 +70,9 @@ nav.menu ul li a:link,nav.menu ul li a:visited{
 nav.menu ul li a:hover{text-decoration: underline;}
 nav.menu ul li:first-child{border-left: none;}
 nav.menu ul li:last-child{border-right: none;}
-
+.nav-tabs>li>a {
+background-color: rgba(255,255,255,0.7) ;
+}
 #wrap {overflow:auto;padding-bottom: 150px;} 
 #footer {position: relative;margin-top: -150px;	height: 150px;clear:both;background-color:#ccc;	} 
 .sectiongroup{width: 100%;min-height: 320px;}
