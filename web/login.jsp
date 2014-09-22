@@ -11,80 +11,111 @@
                 </li>
               </ul>
               <div class="tab-content">
-               <form id="cadastrado" method="post" class="tab-pane active" action="logar.asp"> 
+               <form id="cadastrado" method="post" class="tab-pane active" action="Login"> 
+                   <fieldset class="form-horizontal">
                    <input type="hidden" name="op" value="1" />   
                    <br />
                        <div class="form-group">
-                           <label for="email">E-mail:</label>
-                           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" />
+                           <label for="email" class="col-sm-2 control-label">E-mail:</label>
+                           <div class="col-sm-10">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" />
+                           </div>
                        </div>
                        <div class="form-group">
-                           <label for="senha">Senha:</label>
-                           <input type="password" name="senha" id="senha" />
+                           <label for="senha" class="col-sm-2 control-label">Senha:</label>
+                           <div class="col-sm-10">
+                            <input type="password" name="senha" id="senha" class="form-control" />
+                           </div>
                        </div>
                        <div class="form-group">
+                           <div class="col-sm-offset-2 col-sm-10">
                            <button type="submit" class="btn btn-primary">Acessar</button>
+                           </div>
                        </div>
+                   </fieldset>
                </form>
                <form id="cadastrar" method="post" class="tab-pane" action="logar.asp">                    
                    <input type="hidden" name="op" value="2" />     
                    <fieldset>
                        <legend>Dados pessoais</legend>
                            
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                               <input type="tel" class="telefone" name="telefone" id="telefone" maxlength="16" required /> 
+                        <div>
+                            <label for="telefone" class="col-sm-2 control-label">Telefone</label>
+                            <div class="col-sm-10">
+                               <input type="tel" class="telefone form-control" name="telefone" id="telefone" maxlength="16" required />
+                            </div>
                         </div>
-                       <div class="form-group">
-                           <label for="nome">Nome</label>
-                           <input type="text" name="nome" id="nome" maxlength="150" required />
+                       <div>
+                           <label for="nome" class="col-sm-2 control-label">Nome</label>
+                           <div class="col-sm-10">
+                           <input type="text" name="nome" class="form-control" id="nome" maxlength="150" required />
+                           </div>
                        </div>
                        
-                       <div class="form-group">
-                           <label for="email2">E-mail</label>
-                           <input type="email" name="email" id="email2" placeholder="Digite seu e-mail" maxlength="80" required />
+                       <div>
+                           <label for="email2" class="col-sm-2 control-label">E-mail</label>
+                           <div class="col-sm-10">
+                           <input type="email" name="email" class="form-control" id="email2" placeholder="Digite seu e-mail" maxlength="80" required />
+                           </div>
                        </div>   
-                       <div class="form-group">
-                           <label for="senha2">Senha</label>
-                           <input type="password" name="senha" id="senha2" maxlength="10" required />
+                       <div>
+                           <label for="senha2" class="col-sm-2 control-label">Senha</label>
+                           <div class="col-sm-10">
+                           <input type="password" name="senha" class="form-control" id="senha2" maxlength="10" required />
+                           </div>
                        </div>   
                            
-                       <div class="form-group">
-                           <label for="confirmarsenha">Confirmação de senha</label>
-                           <input type="password" name="confirmarsenha" id="confimarsenha" maxlength="10" required />
+                       <div>
+                           <label for="confirmarsenha" class="col-sm-2 control-label">Confirme a senha</label>
+                           <div class="col-sm-10">
+                           <input type="password" name="confirmarsenha" class="form-control" id="confimarsenha" maxlength="10" required />
+                           </div>
                        </div>   
                    </fieldset>
                      <fieldset>
                          <legend>Dados para entrega</legend>
-                         <div class="form-group">
-                             <label for="cep">CEP</label>
-                             <input type="text" name="cep" id="cep" class="cep" maxlength="9" placeholder="12345-678" required />
+                         <div>
+                             <label for="cep" class="col-sm-2 control-label">CEP</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="cep" id="cep" class="form-control" class="cep" maxlength="9" placeholder="12345-678" required />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="endereco">Endereço</label>
-                             <input type="text" name="endereco" id="endereco" maxlength="255" required />
+                         <div>
+                             <label for="endereco" class="col-sm-2 control-label">Endereço</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="endereco" class="form-control" id="endereco" maxlength="255" required />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="numero">Numero</label>
-                             <input type="text" name="numero" id="numero" maxlength="10" required  />
+                         <div>
+                             <label for="numero" class="col-sm-2 control-label">Numero</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="numero" class="form-control" id="numero" maxlength="10" required  />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="complemento">Complemento</label>
-                             <input type="text" name="complemento" id="complemento" maxlength="20" />
+                         <div>
+                             <label for="complemento" class="col-sm-2 control-label">Complemento</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="complemento" class="form-control" id="complemento" maxlength="20" />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="bairro">Bairro</label>
-                             <input type="text" name="bairro" id="bairro" maxlength="255" required />
+                         <div>
+                             <label for="bairro" class="col-sm-2 control-label">Bairro</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="bairro" class="form-control" id="bairro" maxlength="255" required />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="cidade">Cidade</label>
-                             <input type="text" name="cidade" id="cidade" maxlength="255" required  />
+                         <div>
+                             <label for="cidade" class="col-sm-2 control-label">Cidade</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="cidade" class="form-control" id="cidade" maxlength="255" required  />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="estado">EStado</label>
-                             <select name="estado" id="estado" required>
+                         <div>
+                             <label for="estado" class="col-sm-2 control-label">Estado</label>
+                             <div class="col-sm-10">
+                             <select name="estado" id="estado" class="form-control" required>
                                         <option value="SP">São Paulo</option>
-                                       <!--> <option value="AC">Acre</option>
+                                      <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
                                         <option value="AM">Amazonas</option>
                                         <option value="AP">Amapá</option>
@@ -110,15 +141,19 @@
                                         <option value="SC">Santa Catarina</option>
                                         <option value="SE">Sergipe</option>
                                         <option value="TO">Tocantins</option>
-                                           -->
                                     </select>
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for="referencia">Ponto de referência</label>
-                             <input type="text" name="referencia" id="referencia" maxlength="255" />
+                         <div>
+                             <label for="referencia" class="col-sm-2 control-label">Ponto de referência</label>
+                             <div class="col-sm-10">
+                             <input type="text" name="referencia" class="form-control" id="referencia" maxlength="255" />
+                             </div>
                          </div>
-                         <div class="form-group">
-                             <label for=""><button type="submit" class="btn btn-primary">Cadastrar usuário</button></label>
+                         <div>
+                             <div class="col-sm-offset-2 col-sm-10">
+                             <button type="submit" class="btn btn-primary">Cadastrar usuário</button>
+                             </div>
                          </div>
                      </fieldset>
                  </form>

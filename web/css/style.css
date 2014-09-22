@@ -73,6 +73,12 @@ nav.menu ul li:last-child{border-right: none;}
 .nav-tabs>li>a {
 background-color: rgba(255,255,255,0.7) ;
 }
+.form-horizontal .form-group {
+margin-right: 0px;
+margin-left: 0px;
+bottom: 10px;
+}
+
 #wrap {overflow:auto;padding-bottom: 150px;} 
 #footer {position: relative;margin-top: -150px;	height: 150px;clear:both;background-color:#ccc;	} 
 .sectiongroup{width: 100%;min-height: 320px;}
@@ -85,6 +91,18 @@ background-color: rgba(255,255,255,0.7) ;
 
 #sidebar h2{background-color: #906b13;padding: 5px; color: #ffec5c;font-size: 18px;
 margin-bottom: 15px;margin-top: 0;}
+form fieldset legend{
+background-color: #906b13;
+padding: 5px;
+color: #ffec5c;
+font-size: 18px;
+margin-bottom: 15px;
+margin-top: 0;
+}
+form fieldset div{
+    margin-bottom: 15px;
+}
+
 /* CAROUSEL
 -------------------------------------------------- */
 
