@@ -1,5 +1,5 @@
 package bean;
-public class UsuarioBean {
+public class Usuario {
     private int usuarioID;
     private String nome;
     private String senha;
@@ -7,11 +7,11 @@ public class UsuarioBean {
     private String email;
     private int perfil;
     private int statusDoUsuario;
+    private String observacao;
+    private String rg;
+    private String cpf;
 
-    public UsuarioBean() {
-    }
-
-    public int getUsuarioID() {
+     public int getUsuarioID() {
         return usuarioID;
     }
 
@@ -65,5 +65,28 @@ public class UsuarioBean {
 
     public void setStatusDoUsuario(int statusDoUsuario) {
         this.statusDoUsuario = statusDoUsuario;
-    }    
+    }   
+    
+        public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+    
+     public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+     public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 }

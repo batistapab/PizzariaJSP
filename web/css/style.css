@@ -1,5 +1,6 @@
-*,*:after,*:before {margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+*,*:after,*:before,button{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
     box-sizing: border-box; }
+
 body { font: Helvetica, sans-serif; color: #333333; background:  #333 url('../img/bg-main.jpg') repeat; }
 html, body, #geral {height: 100%;}
  
@@ -44,7 +45,7 @@ vertical-align: text-bottom;
     color: #000;
 }
 #formContato{
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 #formContato fieldset legend,#formContato fieldset label{
     font-family: 'Averia Sans Libre', cursive;
@@ -52,24 +53,22 @@ vertical-align: text-bottom;
 #calculando{padding: 5%;width: 90%;margin: 0 auto;}
 #calculando tr td{text-align: right;}
 nav.menu{
-    display: block;
-    text-align: right;
     background-color: rgba(144, 107, 19, 0.5);
-    padding:5px 0 5px 0; 
-    height: 30px;
-    margin: 0px 0 5px 0;
+    border-radius: 0px;
 }
-nav.menu ul{font-size: 0;list-style-type: none;}
-nav.menu ul li{display: inline-block; border-right: 1px solid #ccc;border-left: 1px solid #555;padding: 0 10px 0 10px;font-size: 14px;}
 nav.menu ul li a:link,nav.menu ul li a:visited{
-    text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
     text-shadow: #555 1px 2px 1px;
 }
-nav.menu ul li a:hover{text-decoration: underline;}
-nav.menu ul li:first-child{border-left: none;}
-nav.menu ul li:last-child{border-right: none;}
+.navbar-toggle .icon-bar+.icon-bar {
+margin-top: 3px;
+}
+.navbar-toggle .icon-bar {
+display: block;
+width: 15px;
+height: 2px;
+border-radius: 1px;
+}
 .nav-tabs>li>a {
 background-color: rgba(255,255,255,0.7) ;
 }
@@ -88,6 +87,10 @@ bottom: 10px;
 .sectiongroup section:last-child{margin-right: 0;}
 .sectiongroup section header{background-color: #906b13;padding: 5px; color: #ffec5c;font: 16px bold;
                             font-family: 'Averia Sans Libre', cursive;margin-bottom: 15px}
+
+.sectiongroupAdmin{
+    width: 100%;min-height: 320px;
+}
 
 #sidebar h2{background-color: #906b13;padding: 5px; color: #ffec5c;font-size: 18px;
 margin-bottom: 15px;margin-top: 0;}
@@ -204,4 +207,68 @@ border-color: #aa801a;
 color: #ffec5c;
 background-color: #aa801a;
 border-color:#906b13;
+}
+
+
+/*Menu esquerdo*/
+#menuEsquerdo{
+  width:150px;
+  min-height:200px;
+  float:left;
+  margin-bottom:10px;
+ -moz-transition-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -webkit-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease; /* For Safari 3.1 to 6.0 */
+ -ms-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ -o-transition: width 100ms ease, height 100ms ease, -webkit-transform 100ms ease;
+ transition: width 100ms ease, height 100ms ease, transform 100ms ease;
+ padding-bottom: 20px; 
+}
+#menuEsquerdo .accordion-group {
+    margin-bottom: 0px;
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}    
+
+#menuEsquerdo .accordion-heading {
+    padding: 7px 5px 7px 5px;
+    border-top: 1px solid #717171; /* inner stroke */
+    border-bottom: 1px solid #5A5A5A; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    list-style-type:none;
+}  
+
+#menuEsquerdo .accordion-heading  a{  
+    color: #cbcbcb; /* text color */
+    text-shadow: 0 1px 0 #3b3b3b; /* drop shadow */
+    text-decoration:none;
+    font-weight:bold;  
+}
+
+#menuEsquerdo .accordion-heading  a:hover{  
+    color:#ccc     
+}
+
+#menuEsquerdo .accordion-heading .active {
+    width: 182px;
+    height: 34px;
+    border: 1px solid #5b5b5b; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+}
+div.accordion-group .accordion-inner ul{margin-bottom: 0;background-color: #ccc;}
+div.accordion-group .accordion-inner ul li{
+    padding: 7px 0 7px 0;
+    text-indent: 10px;
+}
+div.accordion-group .accordion-inner ul li:first-child{
+    border-bottom: 2px #eee solid;
 }

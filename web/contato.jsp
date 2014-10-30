@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:include page="/includes/topo.jsp" />
-<jsp:include page="/includes/menu.jsp" />
+<%@ include file="WEB-INF/jspf/includes/topo.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/menu.jspf" %>
 <form id="formContato">
    <fieldset>
   <legend>Envie sua mensagem</legend>
@@ -30,8 +30,7 @@
   </div>
 </fieldset>
 </form>
-
-<jsp:include page="/includes/sidebar.jsp" />
-<jsp:include page="/includes/javascripts.jsp" />
-<jsp:include page="/includes/footer.jsp" />
+<%@ include file="WEB-INF/jspf/includes/sidebar.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/javascripts.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/footer.jspf" %>
 

@@ -1,5 +1,6 @@
-<jsp:include page="/includes/topo.jsp" />
-<jsp:include page="/includes/menu.jsp" />
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="WEB-INF/jspf/includes/topo.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/menu.jspf" %>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -12,7 +13,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Ambiente.</h1>
-                    <p>Confort·vel e aconchegante! Nosso estabelecimento È ideal para vir com a famÌlia.</p>
+                    <p>Confort√°vel e aconchegante! Nosso estabelecimento √© ideal para vir com a fam√≠lia.</p>
                     <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
                 </div>
             </div>
@@ -27,12 +28,12 @@
             </div>
         </div>
         <div class="item">
-            <img src="img/pizza.jpg" alt="Card·pio">
+            <img src="img/pizza.jpg" alt="Card√°pio">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Card·pio variado.</h1>
-                    <p>Com receitas passadas de geraÁ„o em geraÁ„o da nossa famÌlia.</p>
-                    <p><a class="btn btn-lg btn-brown" href="#" role="button">Ver o card·pio</a></p>
+                    <h1>Card√°pio variado.</h1>
+                    <p>Com receitas passadas de gera√ß√£o em gera√ß√£o da nossa fam√≠lia.</p>
+                    <p><a class="btn btn-lg btn-brown" href="#" role="button">Ver o card√°pio</a></p>
                 </div>
             </div>
         </div>
@@ -42,31 +43,30 @@
 </div><!-- /.carousel -->
 <div class="sectiongroup">
     <section>
-        <header>Card·pio</header>
+        <header>Card√°pio</header>
         <aside>
-            A Click Pizzas tem as melhores pizzas das regi„o, sem falar em nossos 
-            ingredientes italianos secretos passados desde os primeiros propriet·rios.
+            A Click Pizzas tem as melhores pizzas das regi√£o, sem falar em nossos 
+            ingredientes italianos secretos passados desde os primeiros propriet√°rios.
         </aside>
         <p><img src="img/ingredientes.png" alt="ingredientes" title="ingredientes" /></p>
     </section>
     <section>
         <header>O Ambiente</header>
         <aside>
-            Nossa pizzaria difere das outras n„o apenas pelo sabor dos nossos produtos, 
-            mas tambÈm pelo atendimento e por ser um local aconchegante e familiar.                           
+            Nossa pizzaria difere das outras n√£o apenas pelo sabor dos nossos produtos, 
+            mas tamb√©m pelo atendimento e por ser um local aconchegante e familiar.                           
         </aside>
         <p><img src="img/dinner.jpg" alt="Ambiente" title="Ambiente" /></p>
     </section>
     <section>
-        <header>Nossa localizaÁ„o</header>
+        <header>Nossa localiza√ß√£o</header>
         <aside>
-            Alameda Olga, 34455206 - Santa Barbara - S„o Paulo - SP 01155-040
+            Alameda Olga, 34455206 - Santa Barbara - S√£o Paulo - SP 01155-040
         </aside>
-        <p> <img src="img/maps.png" alt="LocalizaÁ„o" title="LocalizaÁ„o" /></p>
+        <p> <img src="img/maps.png" alt="Localiza√ß√£o" title="Localiza√ß√£o" /></p>
 
     </section>
 </div>
-<jsp:include page="/includes/sidebar.jsp" />
-<jsp:include page="/includes/javascripts.jsp" />
-<jsp:include page="/includes/footer.jsp" />
-
+<%@ include file="WEB-INF/jspf/includes/sidebar.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/javascripts.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/footer.jspf" %>

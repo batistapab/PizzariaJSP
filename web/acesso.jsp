@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:include page="/includes/topo.jsp" />
-<jsp:include page="/includes/menu.jsp" />
+<%@ include file="WEB-INF/jspf/includes/topo.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/menu.jspf" %>
 
               <ul class="nav nav-tabs" role="tablist" id="tabs">
                 <li class="active">
@@ -13,7 +13,7 @@
               <div class="tab-content">
                <form id="cadastrado" method="post" class="tab-pane active" action="Login"> 
                    <fieldset class="form-horizontal">
-                   <input type="hidden" name="op" value="1" />   
+                   <input type="hidden" name="acao" value="login" />   
                    <br />
                        <div class="form-group">
                            <label for="email" class="col-sm-2 control-label">E-mail:</label>
@@ -158,7 +158,7 @@
                      </fieldset>
                  </form>
               </div>
-<jsp:include page="/includes/sidebar.jsp" />
-<jsp:include page="/includes/javascripts.jsp" />
-<jsp:include page="/includes/footer.jsp" />
+<%@ include file="WEB-INF/jspf/includes/sidebar.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/javascripts.jspf" %>
+<%@ include file="WEB-INF/jspf/includes/footer.jspf" %>
 

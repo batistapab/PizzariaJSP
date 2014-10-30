@@ -1,0 +1,61 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="accordion" id="menuEsquerdo">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="home.jsp">
+                                  <i class="glyphicon glyphicon-home"></i> Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="pedidos.jsp">
+                                <i class="glyphicon glyphicon-list-alt"></i> Pedidos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="dados.jsp">
+                                <i class="glyphicon glyphicon-file"></i> Dados
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                <i class="glyphicon glyphicon-barcode"></i> Produtos &#x25BC;
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href="cadastrar-produto.jsp">Cadastrar</a></li>
+                                    <li><a href="lista-de-produtos.jsp">Lista de produtos</a></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                                <i class="glyphicon glyphicon-user"></i> Usuários &#x25BC;
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href="cadastrar-usuario.jsp">Cadastrar</a></li>
+                                    <li><a href="lista-de-usuarios.jsp">Lista</a></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="logout.jsp">
+                                <i class="glyphicon glyphicon-log-out"></i> Sair
+                            </a>
+                        </div>
+                    </div>
+                </div>
