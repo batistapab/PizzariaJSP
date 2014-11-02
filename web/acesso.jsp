@@ -11,7 +11,7 @@
                 </li>
               </ul>
               <div class="tab-content">
-               <form id="cadastrado" method="post" class="tab-pane active" action="Login"> 
+                  <form id="cadastrado" method="post" class="tab-pane active" action="Login"> 
                    <fieldset class="form-horizontal">
                    <input type="hidden" name="acao" value="login" />   
                    <br />

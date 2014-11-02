@@ -55,6 +55,7 @@ vertical-align: text-bottom;
 nav.menu{
     background-color: rgba(144, 107, 19, 0.5);
     border-radius: 0px;
+    border:none;
 }
 nav.menu ul li a:link,nav.menu ul li a:visited{
     color: #fff;
@@ -71,6 +72,14 @@ border-radius: 1px;
 }
 .nav-tabs>li>a {
 background-color: rgba(255,255,255,0.7) ;
+}
+#screenName{
+    display: inline-block;
+    color:#fff;
+    text-shadow: #555 1px 2px 1px;
+    margin-top: 14px;
+    position: absolute;
+    right: 20px;
 }
 .form-horizontal .form-group {
 margin-right: 0px;
@@ -89,7 +98,11 @@ bottom: 10px;
                             font-family: 'Averia Sans Libre', cursive;margin-bottom: 15px}
 
 .sectiongroupAdmin{
-    width: 100%;min-height: 320px;
+    width: -webkit-calc(100% - 200px);  /* para Chrome */
+    width: -moz-calc(100% - 200px);     /* para Firefox */
+    width: calc(100% - 200px);  
+    min-height: 320px;
+    float: left;
 }
 
 #sidebar h2{background-color: #906b13;padding: 5px; color: #ffec5c;font-size: 18px;
@@ -142,7 +155,6 @@ body:before {content:"";height:100%;float:left;	width:0;margin-top:-32767px;}
  }
 #sidebar{
   width:20%;
-  min-width:200px;
   min-height:200px;
   float:left;
   margin-bottom:10px;

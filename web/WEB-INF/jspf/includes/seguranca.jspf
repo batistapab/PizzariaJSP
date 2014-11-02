@@ -1,0 +1,29 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<% 
+    String email = (String) session.getAttribute("email");
+    
+    if (email !=null) {
+%>
+    <sql:setDataSource var="pizzaria" driver="com.mysql.jdbc.Driver"
+     url="jdbc:mysql://localhost/pizzaria"
+     user="root"  password="pablito"/> 
+<sql:query dataSource="${pizzaria}" var="usuario">
+SELECT * from usuarios;
+</sql:query>
+
+<c:forEach var="row" items="${usuario.rows}">
+    <c:set var="usuarioID" value="${row.usuarioID}" scope="session"  />
+    <c:set var="perfil" value="${row.nome}" scope="session"  />
+    <c:set var="statusDoUsuario" value="${row.nome}" scope="session"  />
+    <c:set var="nome" value="${row.nome}" scope="session"  />
+</c:forEach>
+<% }
+    else{
+    response.sendRedirect("acesso.jsp"); 
+}
+%>
+

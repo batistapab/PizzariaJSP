@@ -37,24 +37,4 @@ public class UsuarioDao {
             System.out.println("Erro de SQL: " + e.getMessage());
         }
     }
-    public void validate(Usuario user){
-        boolean status = false;
-        String sql = "SELECT * FROM usuarios WHERE email=? and senha=SHA1(?)";
-        try{
-            pst = con.prepareStatement(sql);
-            pst.setString(1, user.getEmail());
-            pst.setString(2, user.getSenha());
-            rs = pst.executeQuery();
-            if(rs.next()){
-                 status = true;
-                 System.out.println("Usuário encontrado");
-            }      
-            
-            pst.close();
-        }
-        catch (SQLException e) {
-            System.out.println("Erro de SQL: " + e.getMessage());
-        }
-    }
-
 }

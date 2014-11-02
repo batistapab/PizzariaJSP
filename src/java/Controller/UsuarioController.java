@@ -1,6 +1,6 @@
 package Controller;
 
-import bean.Usuario;
+import dao.LoginDao;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -46,14 +46,15 @@ public class UsuarioController extends HttpServlet {
         
         HttpSession session = request.getSession(false);  
         if(acao.equalsIgnoreCase("login")){           
-            Usuario user = new Usuario();
-            user.setEmail(email);
-            user.setSenha(senha);
-            dao.validate(user);
-            
-            
-            session.setAttribute("email", email); 
-             response.sendRedirect("home.jsp");
+             if(LoginDao.validate(email,senha)){  
+                session.setAttribute("email", email); 
+                response.sendRedirect("home.jsp"); 
+                }  
+                else{  
+                    out.print("Usuário ou senha!");  
+                    RequestDispatcher rd=request.getRequestDispatcher("index.html");  
+                    rd.include(request,response);  
+                }  
             }
             else{    
             out.print("<p style=\"color:red\">Desculpe e-mail ou senha incorreta!</p>");    

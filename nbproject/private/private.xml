@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/JSP/PizzariaJSP/web/WEB-INF/jspf/includes/menuEsquerdo.jspf</file>
-            <file>file:/C:/JSP/PizzariaJSP/src/java/dao/UsuarioDao.java</file>
-            <file>file:/C:/JSP/PizzariaJSP/web/home.jsp</file>
-            <file>file:/C:/JSP/PizzariaJSP/web/css/style.css</file>
-            <file>file:/C:/JSP/PizzariaJSP/web/acesso.jsp</file>
-            <file>file:/C:/JSP/PizzariaJSP/web/cardapio.jsp</file>
-            <file>file:/C:/JSP/PizzariaJSP/src/java/bean/Pedido.java</file>
-            <file>file:/C:/JSP/PizzariaJSP/web/WEB-INF/jspf/includes/menu.jspf</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
